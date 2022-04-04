@@ -4,6 +4,7 @@ const Dashboard = () => {
 	return (
 		<div>
 			<h3>this is Dashboard page</h3>
+			<h3> this second page </h3>
 		</div>
 	)
 }
