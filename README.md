@@ -1,6 +1,6 @@
 # welcome to our products analysis react app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here you can find [cycle mart](https://prodicts-analysis.netlify.app).
 
 ## Available Routes
 
@@ -8,3 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Reviews
 - Dashboard
 - Blogs
+## home page 
+Here you wil see products detais
+## reviews page 
+Hare you will see all product review
+## dashboard 
+Dashboard is revenue anf investment comparission
+## blogs
+Blogs are defined how semantic tag and cotext api work
