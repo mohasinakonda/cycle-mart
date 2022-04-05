@@ -4,14 +4,15 @@ const Blogs = () => {
 	return (
 		<div className="pt-5">
 			<article>
+				<h2 className="p-3">1) what is context API ?</h2>
 				<div className="d-flex justify-content-center">
 					<img
-						className="w-75 img-fluid"
+						className="w-75 img-fluid p-3"
 						src="https://imgs.developpaper.com/imgs/2271126660-5d35c5416b4ce_articlex.png"
 						alt=""
 					/>
 				</div>
-				<h2 className="pt-3">what is context API ?</h2>
+
 				<p>
 					The React Context API is a way for a React app to effectively produce
 					global variables that can be passed around. This is the alternative to
@@ -24,6 +25,7 @@ const Blogs = () => {
 				</p>
 			</article>
 			<article>
+				<h2 className="p-3">2) What is semantic tag in HTML?</h2>
 				<div className="d-flex justify-content-center">
 					<img
 						className="w-75 img-fluid p-2 "
@@ -32,7 +34,6 @@ const Blogs = () => {
 					/>
 				</div>
 
-				<h2 className="pt-3">What is semantic tag in HTML?</h2>
 				<p>
 					Semantic HTML or semantic markup is HTML that introduces meaning to
 					the web page rather than just presentation.Sematic tag is useful for
@@ -46,6 +47,47 @@ const Blogs = () => {
 					italic), and don't provide any additional meaning to the markup.
 					Examples of semantic HTML tags include: Header tags h1 through h6
 					blockquote code em
+				</p>
+			</article>
+			<article>
+				<h2 className="p-3">
+					3)The differences between inline,block and inline-block elements
+				</h2>
+				<div className="d-flex justify-content-center">
+					<img
+						className="w-100 p-3"
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj08S-BFTC5vU6M5Rk2TL-yj1siOhkKmqMGw&usqp=CAU"
+						alt=""
+					/>
+				</div>
+
+				<h3>Inline html elements</h3>
+				<p>
+					Inline elements are those which only occupy the space bounded by the
+					tags defining the element, instead of breaking the flow of the
+					content. An inline element does not start on a new line and only takes
+					up as much width as necessary,example :<li>i</li>
+					<li>a</li>
+					<li>span</li>
+				</p>
+				<h3>Block element</h3>
+				<p>
+					A block-level element is an HTML element that begins a new line on a
+					web page and extends the full width of the available horizontal space
+					of its parent element. It creates large blocks of content like
+					paragraphs or page divisions. example:
+					<ul>
+						<li>div</li>
+						<li>p</li>
+						<li>article</li>
+						<li>h1-h6</li>
+					</ul>
+				</p>
+				<h3>Inline block element</h3>
+				<p>
+					Inline block element behave like inline element but inline element has
+					no height and weight but inline-block element has default inline block
+					elements are img button input textarea .
 				</p>
 			</article>
 		</div>

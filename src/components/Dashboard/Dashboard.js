@@ -27,9 +27,8 @@ const Dashboard = () => {
 			data={chartData}
 			margin={{ top: 5, right: 20, bottom: 5, left: 10 }}
 		>
-			<Line type="monotone" dataKey="investment" stroke="#8884d8" />
 			<Line type="monotone" dataKey="sell" stroke="orange" />
-			<Line type="monotone" dataKey="revenue" stroke="green" />
+
 			<CartesianGrid stroke="#ccc" strokeDasharray="3 3" />
 			<XAxis dataKey="month" />
 			<YAxis />
@@ -42,7 +41,7 @@ const Dashboard = () => {
 			height={250}
 			margin={{ top: 35, right: 20, bottom: 5, left: 10 }}
 		>
-			<Pie
+			{/* <Pie
 				data={chartData}
 				dataKey="investment"
 				nameKey="month"
@@ -50,15 +49,15 @@ const Dashboard = () => {
 				cy="50%"
 				outerRadius={70}
 				fill="#8884d8"
-			/>
+			/> */}
 			<Pie
 				data={chartData}
-				dataKey="sell"
+				dataKey="investment"
 				nameKey="month"
 				cx="50%"
 				cy="50%"
-				innerRadius={70}
-				outerRadius={90}
+				// innerRadius={70}
+				outerRadius={70}
 				fill="#82ca9d"
 				label
 			/>
@@ -68,8 +67,8 @@ const Dashboard = () => {
 				nameKey="month"
 				cx="50%"
 				cy="50%"
-				innerRadius={90}
-				outerRadius={100}
+				innerRadius={70}
+				outerRadius={90}
 				fill="red"
 				label
 			/>
@@ -115,13 +114,13 @@ const Dashboard = () => {
 				fillOpacity={1}
 				fill="url(#revenueColor)"
 			/>
-			<Area
+			{/* <Area
 				type="monotone"
 				dataKey="sell"
 				stroke="green"
 				fillOpacity={1}
 				fill="url(#sellColor)"
-			/>
+			/> */}
 		</AreaChart>
 	)
 	return (
@@ -129,10 +128,11 @@ const Dashboard = () => {
 			className="d-flex flex-column justify-content-center p-5
 		"
 		>
-			<h2>Render line chart</h2>
+			<h2>Sells Outline</h2>
 			<div>{renderLineChart}</div>
-
+			<h2> Investment vs Revenue Outline</h2>
 			{pieChart}
+			<h2> Investment vs Revenue Outline</h2>
 			{areaChart}
 		</div>
 	)

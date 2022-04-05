@@ -13,7 +13,7 @@ const Review = ({ review }) => {
 				<p className="ms-2 fs-4">{name}</p>
 			</div>
 			<p className="p-2">{body}</p>
-			<p>Ratings:{rating}</p>
+			<p>Ratings:{rating} out of 5</p>
 		</div>
 	)
 }

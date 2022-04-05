@@ -33,6 +33,7 @@ const Home = () => {
 			<section>
 				<div>
 					<div className="row">
+						<h2 className="pt-3 text-center">Customer reviews (3)</h2>
 						{reviews.slice(0, 3).map((review) => (
 							<Review key={review.id} review={review} />
 						))}
