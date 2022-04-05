@@ -1,6 +1,6 @@
 # welcome to our products analysis react app
 
-Here you can find [cycle mart](https://prodicts-analysis.netlify.app).
+Here you can find [cycle mart](https://products-analysis.netlify.app).
 
 ## Available Routes
 
@@ -16,3 +16,4 @@ Hare you will see all product review
 Dashboard is revenue anf investment comparission
 ## blogs
 Blogs are defined how semantic tag and cotext api work
+And many more
