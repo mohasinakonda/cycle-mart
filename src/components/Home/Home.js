@@ -31,7 +31,7 @@ const Home = () => {
 				</div>
 			</div>
 			<section>
-				<div>
+				<div className="pt-5">
 					<div className="row">
 						<h2 className="pt-3 text-center">Customer reviews (3)</h2>
 						{reviews.slice(0, 3).map((review) => (
@@ -39,13 +39,14 @@ const Home = () => {
 						))}
 					</div>
 				</div>
-
-				<button
-					onClick={() => navigate("/reviews")}
-					className="review-btn w-25 mt-2 "
-				>
-					See all reviews
-				</button>
+				<div className="d-flex justify-content-center p-4">
+					<button
+						onClick={() => navigate("/reviews")}
+						className="review-btn w-25 mt-2 "
+					>
+						See all reviews
+					</button>
+				</div>
 			</section>
 		</div>
 	)

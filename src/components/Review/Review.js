@@ -3,7 +3,7 @@ import React from "react"
 const Review = ({ review }) => {
 	const { name, img, body, rating } = review
 	return (
-		<div className="col-md-4 g-2 border border-lg">
+		<div className="col-md-4 gx-2 gy-2 border border-lg ">
 			<div className="d-flex align-items-center">
 				<img
 					src={img}
