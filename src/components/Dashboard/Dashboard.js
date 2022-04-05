@@ -25,19 +25,23 @@ const Dashboard = () => {
 			width={700}
 			height={300}
 			data={chartData}
-			// margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
+			margin={{ top: 5, right: 20, bottom: 5, left: 10 }}
 		>
 			<Line type="monotone" dataKey="investment" stroke="#8884d8" />
 			<Line type="monotone" dataKey="sell" stroke="orange" />
 			<Line type="monotone" dataKey="revenue" stroke="green" />
 			<CartesianGrid stroke="#ccc" strokeDasharray="3 3" />
 			<XAxis dataKey="month" />
-			<YAxis dataKey="investment" />
+			<YAxis />
 			<Tooltip />
 		</LineChart>
 	)
 	const pieChart = (
-		<PieChart width={730} height={250}>
+		<PieChart
+			width={730}
+			height={250}
+			margin={{ top: 35, right: 20, bottom: 5, left: 10 }}
+		>
 			<Pie
 				data={chartData}
 				dataKey="investment"
@@ -122,10 +126,11 @@ const Dashboard = () => {
 	)
 	return (
 		<div
-			className="d-flex flex-column justify-content-center
+			className="d-flex flex-column justify-content-center p-5
 		"
 		>
-			{renderLineChart}
+			<h2>Render line chart</h2>
+			<div>{renderLineChart}</div>
 
 			{pieChart}
 			{areaChart}
